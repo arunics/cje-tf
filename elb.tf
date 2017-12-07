@@ -8,7 +8,7 @@ resource "aws_elb" "cje_elb_internal" {
     instance_protocol  = "http"
     lb_port            = 443
     lb_protocol        = "https"
-    ssl_certificate_id = "arn:aws:acm:us-west-2:489012308314:certificate/d83e37e2-bf0c-470e-ad6c-92cb09fde23e"
+    ssl_certificate_id = "arn:aws:acm:us-west-2:1111:certificate/xxxxxx"
   }
 
   listener {
@@ -46,7 +46,7 @@ resource "aws_elb" "cje_elb_external" {
     instance_protocol  = "http"
     lb_port            = 443
     lb_protocol        = "https"
-    ssl_certificate_id = "arn:aws:acm:us-west-2:489012308314:certificate/d83e37e2-bf0c-470e-ad6c-92cb09fde23e"
+    ssl_certificate_id = "arn:aws:acm:us-west-2:1111:certificate/xxxxxx"
   }
 
   health_check {

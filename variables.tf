@@ -72,8 +72,7 @@ variable "user_data" {
 }
 
 variable "internal_cidr" {
-  description = "CIDR Block for Nike Internal Address"
-  default     = ["10.0.0.0/8", "146.197.0.0/16"]
+  description = "CIDR Block for  Internal Address"
 }
 
 variable "external_cidr" {
@@ -106,5 +105,4 @@ variable "azs" {
 
 variable "zone_id" {
   description = "Zone ID for managing DNS / Alias"
-  default     = "Z322C9V5A2Y42W"
 }
